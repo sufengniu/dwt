@@ -53,10 +53,11 @@ architecture Behavioral of fixed_fir is
 
 signal data_in_buff, data_out_buff: sfixed(DATA_INT downto -DATA_FRA);
 
-type CoefficientType is array (0 to ORDER) of sfixed(COEFF_INT downto -COEFF_FRA);
+type CoefficientType is array (0 to TAP-1) of sfixed(COEFF_INT downto -COEFF_FRA);
 signal coefficient : CoefficientType := (others => (others => '0'));
 
-type 
+type TapBuffType is array (0 to TAP-1) of sfixed(DATA_INT downto -DATA_FRA);
+signal tap_buff : TapBuffType := (others => (others => '0'));
 
 begin
 
@@ -77,9 +78,12 @@ end process;
 process(clk, rst)
 begin
 	if rst = '1' then
-		
+		tap_buff <= (others => (others => '0'));
 	elsif rising_edge(clk) then
 		
+		for i in TAP downto 1 loop
+			tap_buff(i) <= tap_buff(i-1)
+		end loop;
 	end if;
 end process;
 

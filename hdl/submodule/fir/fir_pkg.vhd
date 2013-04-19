@@ -51,7 +51,7 @@ package fir_pkg is
 	constant WIDTH_COEFF_FLOAT							: integer := COEFF_FPF + COEFF_EXP + 1;	
 	
 	-- filter order
-	constant OERDER										: integer := 8;
+	constant TAP										: integer := 8;
 
 -- constant <constant_name>		: time := <time_unit> ns;
 -- constant <constant_name>		: integer := <value;
