@@ -49,11 +49,9 @@ end fir_unit_fixed;
 
 architecture Behavioral of fir_unit_fixed is
 
-signal multi_res, multi_buff : sfixed(sfixed_high(data_in, '*', coeff) 
-											downto sfixed_low(data_in, '*', coeff));
+signal multi_res, multi_buff : sfixed(DATA_INT + COEFF_INT + 1 downto -(DATA_FRA + COEFF_FRA));
 				
-signal data_out_reg : sfixed(sfixed_high(data_in, '*', coeff) 
-											downto sfixed_low(data_in, '*', coeff));
+signal data_out_reg : sfixed(DATA_INT + COEFF_INT + 1 downto -(DATA_FRA + COEFF_FRA));
 
 begin
 
@@ -74,4 +72,3 @@ multi_res <= data_in * coeff;
 data_out_reg <= resize(multi_buff + tap_in, data_out_reg'high, data_out_reg'low);
 			
 end Behavioral;
-

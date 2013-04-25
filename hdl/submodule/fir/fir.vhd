@@ -39,9 +39,9 @@ entity fir is
            rst						: in  STD_LOGIC;
            ce						: in  STD_LOGIC;
 			  coeff_en				: in	STD_LOGIC;
-			  coeff					: in	STD_LOGIC_VECTOR (COEFF_WIDTH downto 0);
-           data_in				: in  STD_LOGIC_VECTOR (DATA_WIDTH downto 0);
-           data_out				: out  STD_LOGIC_VECTOR (DATA_WIDTH downto 0));
+			  coeff					: in	STD_LOGIC_VECTOR (COEFF_WIDTH-1 downto 0);
+           data_in				: in  STD_LOGIC_VECTOR (DATA_WIDTH-1 downto 0);
+           data_out				: out  STD_LOGIC_VECTOR (DATA_WIDTH-1 downto 0));
 end fir;
 
 architecture Behavioral of fir is
@@ -55,9 +55,9 @@ begin
 					rst			=> rst,
 					ce				=> ce,
 					coeff_en		=> coeff_en,
-					coeff			=> coeff(WIDTH_COEFF_FIXED downto 0),
-					data_in		=> data_in(WIDTH_DATA_FIXED downto 0),
-					data_out		=> data_out(WIDTH_DATA_FIXED downto 0));
+					coeff			=> coeff(WIDTH_COEFF_FIXED-1 downto 0),
+					data_in		=> data_in(WIDTH_DATA_FIXED-1 downto 0),
+					data_out		=> data_out(WIDTH_DATA_FIXED-1 downto 0));
 end generate FIXED_GEN;
 
 --FLOAT_GEN: if (data_form = "float") generate

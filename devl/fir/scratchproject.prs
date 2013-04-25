@@ -1,0 +1,77 @@
+#-- Synopsys, Inc.
+#-- Version E-2011.03
+#-- Project file /home/sniu/lab/dwt/devl/fir/scratchproject.prs
+
+#project files
+add_file -vhdl -lib IEEE_PROPOSED "/tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd"
+add_file -vhdl -lib IEEE_PROPOSED "/tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd"
+add_file -vhdl -lib IEEE_PROPOSED "/tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/float_pkg_c.vhd"
+add_file -verilog "/tools/Synopsys/s_fpga/E-2011.03/bin/../lib/xilinx/unisim.v"
+add_file -vhdl -lib work "/home/sniu/lab/dwt/hdl/submodule/fir/fir_pkg.vhd"
+add_file -vhdl -lib work "/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd"
+add_file -vhdl -lib work "/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd"
+add_file -vhdl -lib work "/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd"
+add_file -constraint "/home/sniu/lab/dwt/devl/fir/fir.sdc"
+
+
+#implementation: "fir"
+impl -add /home/sniu/lab/dwt/devl/fir -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -num_critical_paths 0
+set_option -num_startend_points 0
+
+#device options
+set_option -technology VIRTEX5
+set_option -part xc5vfx130t
+set_option -package ff1738
+set_option -speed_grade -2
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "fir"
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Xilinx Virtex2
+set_option -run_prop_extract 1
+set_option -maxfan 100
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -update_models_cp 0
+set_option -retiming 0
+set_option -no_sequential_opt 0
+set_option -fixgatedclocks 3
+set_option -fixgeneratedclocks 3
+
+# Xilinx Virtex5
+set_option -enable_prepacking 1
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 1
+set_option -resource_sharing 1
+
+#VIF options
+set_option -write_vif 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "/home/sniu/lab/dwt/devl/fir/fir.edn"
+impl -active "fir"

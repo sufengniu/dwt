@@ -1,0 +1,55 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Apr 25 18:13:25 2013
+#
+
+
+Top view:               fir
+Requested Frequency:    290.5 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    /home/sniu/lab/dwt/devl/fir/fir.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.492
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+fir|clk            290.5 MHz     259.2 MHz     3.442         3.859         -0.417     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+fir|clk   fir|clk  |  0.000       0.492  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+

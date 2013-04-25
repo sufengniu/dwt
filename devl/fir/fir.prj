@@ -1,7 +1,0 @@
-vhdl IEEE_PROPOSED "../../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd"
-vhdl IEEE_PROPOSED "../../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd"
-vhdl IEEE_PROPOSED "../../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/float_pkg_c.vhd"
-vhdl work "../../hdl/submodule/fir/fir_pkg.vhd"
-vhdl work "../../hdl/submodule/fir/fir_unit_fixed.vhd"
-vhdl work "../../hdl/submodule/fir/fixed_fir.vhd"
-vhdl work "../../hdl/submodule/fir/fir.vhd"

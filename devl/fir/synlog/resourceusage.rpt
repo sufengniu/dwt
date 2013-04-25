@@ -1,0 +1,42 @@
+---------------------------------------
+Resource Usage Report for fir 
+
+Mapping to part: xc5vfx130tff1738-2
+Cell usage:
+BUF             4 uses
+DSP48E          8 uses
+FDCE            472 uses
+GND             9 uses
+MUXCY_L         238 uses
+VCC             9 uses
+XORCY           239 uses
+LUT1            15 uses
+LUT2            258 uses
+LUT3            448 uses
+LUT4            3 uses
+LUT5            5 uses
+LUT6            18 uses
+
+I/O ports: 100
+I/O primitives: 68
+IBUF           35 uses
+IBUFG          1 use
+OBUF           16 uses
+OBUFT          16 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   472 (0%)
+
+DSP48s: 8 of 320 (2%)
+
+Global Clock Buffers: 1 of 32 (3%)
+
+
+Mapping Summary:
+Total  LUTs: 745 (0%)
+
+
+ Number of unique control sets:              6
+

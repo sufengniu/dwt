@@ -43,10 +43,10 @@ entity fixed_fir is
 				ce 				: in  STD_LOGIC;
 				
 				coeff_en			: in	STD_LOGIC;
-				coeff				: in	STD_LOGIC_VECTOR (WIDTH_COEFF_FIXED downto 0);
+				coeff				: in	STD_LOGIC_VECTOR (WIDTH_COEFF_FIXED-1 downto 0);
 				
-				data_in 			: in  STD_LOGIC_VECTOR (WIDTH_DATA_FIXED downto 0);
-				data_out 		: out  STD_LOGIC_VECTOR (WIDTH_DATA_FIXED downto 0));
+				data_in 			: in  STD_LOGIC_VECTOR (WIDTH_DATA_FIXED-1 downto 0);
+				data_out 		: out  STD_LOGIC_VECTOR (WIDTH_DATA_FIXED-1 downto 0));
 end fixed_fir;
 
 architecture Behavioral of fixed_fir is
@@ -102,10 +102,10 @@ begin
 	(	clk			=> clk,
 		rst			=> rst,
 		ce				=> ce,
-		tap_in		=> tap_buff(i),
+		tap_in		=> tap_buff(i-1),
 		coeff			=> coefficient(TAP-1-i),
 		data_in		=> data_in_buff,
-		data_out		=> tap_buff(i+1));
+		data_out		=> tap_buff(i));
 end generate fir_gen;
 
 process(clk, rst)
@@ -113,10 +113,14 @@ begin
 	if rst = '1' then
 		tap_reg <= (others => '0');
 		tap_buff(0) <= (others => '0');
+		data_out_buff <= (others => '0');
 	elsif rising_edge(clk) then
 		if ce = '1' then
 			tap_reg <= data_in_buff * coefficient(TAP-1);
 			tap_buff(0) <= tap_reg;
+			
+			-- output
+			data_out_buff <= resize(tap_buff(TAP-1), data_out_buff'high, data_out_buff'low);
 		end if;
 	end if;
 end process;

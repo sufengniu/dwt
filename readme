@@ -1,1 +1,11 @@
 this is dwt vhdl implementation
+
+Linux environment:
+XST:
+remove IEEE_PROPOSED under libraries tag. or you will got error
+
+Synposys tool: 
+keep or create IEEE_PROPOSED library. or Synopsys tool will fail
+
+Windows environment:
+there is no IEEE_PROPOSED issue under Windows environment.

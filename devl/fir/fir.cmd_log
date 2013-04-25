@@ -1,11 +1,9 @@
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
-xst -intstyle ise -ifn "/home/sniu/lab/dwt/devl/fir/fir.xst" -ofn "/home/sniu/lab/dwt/devl/fir/fir.syr" 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro fir.prj -tcl fir_map.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro -tcl /home/sniu/lab/dwt/devl/fir/fir_open_file.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro fir.prj -tcl fir_map.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro fir.prj -tcl fir_map.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro fir.prj -tcl fir_map.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro fir.prj -tcl fir_map.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro -tcl /home/sniu/lab/dwt/devl/fir/fir_open_file.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro -tcl /home/sniu/lab/dwt/devl/fir/fir_open_file.tcl 
+/tools/Synopsys/s_fpga/E-2011.03/bin/synplify_pro fir.prj -tcl fir_map.tcl 

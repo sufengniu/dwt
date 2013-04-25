@@ -1,0 +1,299 @@
+Synopsys Xilinx Technology Mapper, Version maprc, Build 388R, Built Mar  1 2011 11:36:30
+Copyright (C) 1994-2011, Synopsys, Inc. This software the associated documentation are confidential and proprietary to Synopsys, Inc. Your use or disclosure of this software subject to the terms and conditions of a written license agreement between you, or your company, and Synopsys, Inc.
+Product Version E-2011.03
+@N: MF249 |Running in 64-bit mode.
+@N: MF257 |Gated clock conversion enabled 
+Reading Xilinx I/O pad type table from file </tools/Synopsys/s_fpga/E-2011.03/lib/xilinx/x_io_tbl.txt> 
+Reading Xilinx Rocket I/O parameter type table from file </tools/Synopsys/s_fpga/E-2011.03/lib/xilinx/gttype.txt> 
+
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_1 on net data_out[31] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_2 on net data_out[30] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_3 on net data_out[29] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_4 on net data_out[28] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_5 on net data_out[27] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_6 on net data_out[26] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_7 on net data_out[25] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_8 on net data_out[24] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_9 on net data_out[23] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_10 on net data_out[22] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_11 on net data_out[21] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_12 on net data_out[20] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_13 on net data_out[19] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_14 on net data_out[18] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_15 on net data_out[17] has its enable tied to GND (module fir) 
+@W: MO111 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":60:18:60:55|tristate driver data_out_16 on net data_out[16] has its enable tied to GND (module fir) 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: FX493 |Applying Initial value "00000000000000000000000000000000" on instance: FIXED_GEN.FIXED_FIR.tap_buff_0[31:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_6[15:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_5[15:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_4[15:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_3[15:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_2[15:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_1[15:0] 
+@N: FX493 |Applying Initial value "0000000000000000" on instance: FIXED_GEN.FIXED_FIR.coefficient_0[15:0] 
+@N: MT206 |Autoconstrain Mode is ON
+
+Finished RTL optimizations (Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 168MB)
+
+
+Finished factoring (Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 168MB)
+
+
+
+#################### START OF GENERATED CLOCK OPTIMIZATION REPORT ####################[
+
+======================================================================================
+                                Instance:Pin        Generated Clock Optimization Status
+======================================================================================
+
+
+##################### END OF GENERATED CLOCK OPTIMIZATION REPORT #####################]
+
+
+Finished gated-clock and generated-clock conversion (Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 168MB)
+
+
+Clock Buffers:
+  Inserting Clock buffer for port clk,
+
+Finished generic timing optimizations - Pass 1 (Time elapsed 0h:00m:01s; Memory used current: 140MB peak: 168MB)
+
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_6,  because it is equivalent to instance rst_c_sync_5
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_5,  because it is equivalent to instance rst_c_sync_4
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_4,  because it is equivalent to instance rst_c_sync_3
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_3,  because it is equivalent to instance rst_c_sync_2
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_2,  because it is equivalent to instance rst_c_sync_1
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_1,  because it is equivalent to instance rst_c_sync_0
+@W: BN132 :"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":60:1:60:2|Removing instance rst_c_sync_0,  because it is equivalent to instance rst_c_sync
+
+Starting Early Timing Optimization (Time elapsed 0h:00m:09s; Memory used current: 144MB peak: 168MB)
+
+
+Finished Early Timing Optimization (Time elapsed 0h:00m:10s; Memory used current: 145MB peak: 168MB)
+
+
+Finished generic timing optimizations - Pass 2 (Time elapsed 0h:00m:10s; Memory used current: 144MB peak: 168MB)
+
+
+Finished preparing to map (Time elapsed 0h:00m:10s; Memory used current: 145MB peak: 168MB)
+
+
+Finished technology mapping (Time elapsed 0h:00m:10s; Memory used current: 144MB peak: 168MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:10s		    -1.48ns		 746 /       433
+   2		0h:00m:10s		    -1.48ns		 746 /       433
+------------------------------------------------------------
+
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[15]" with 36 loads has been replicated 3 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_4[15]" with 16 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_1[15]" with 16 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_2[15]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_3[15]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_5[15]" with 17 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_6[15]" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":85:1:85:2|Instance "FIXED_GEN\.FIXED_FIR.coefficient_0[15]" with 15 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[11]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[14]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[13]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[12]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[7]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[10]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[9]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[8]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[3]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[6]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[5]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[4]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[2]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[1]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":71:1:71:2|Instance "FIXED_GEN\.FIXED_FIR.data_in_buff[0]" with 8 loads has been replicated 1 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":113:1:113:2|Instance "rst_c_sync" with 96 loads has been replicated 3 time(s) to improve timing 
+Timing driven replication report
+Added 33 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":113:1:113:2|Instance "rst_c_sync_fast" with 18 loads has been replicated 2 time(s) to improve timing 
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":113:1:113:2|Instance "rst_c_sync_rep1" with 20 loads has been replicated 2 time(s) to improve timing 
+Timing driven replication report
+Added 4 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+
+
+@N: FX271 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":113:1:113:2|Instance "rst_c_sync_rep2" with 24 loads has been replicated 2 time(s) to improve timing 
+Timing driven replication report
+Added 2 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:12s		    -1.25ns		 746 /       472
+
+   2		0h:00m:12s		    -1.25ns		 746 /       472
+   3		0h:00m:12s		    -1.25ns		 746 /       472
+   4		0h:00m:12s		    -1.25ns		 746 /       472
+------------------------------------------------------------
+
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:12s		    -1.25ns		 746 /       472
+
+   2		0h:00m:12s		    -1.25ns		 746 /       472
+   3		0h:00m:12s		    -1.25ns		 746 /       472
+   4		0h:00m:12s		    -1.25ns		 746 /       472
+------------------------------------------------------------
+
+@N: FX104 |Net "ce_c" with "341" loads has been buffered by "4" buffers due to a soft fanout limit of "100" 
+@N: FX103 :"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":88:6:88:34|Instance "FIXED_GEN\.FIXED_FIR.un2_ce" with "140" loads has been replicated "1" time(s) due to a soft fanout limit of "100" 
+Net buffering Report for view:work.fir(behavioral):
+Added 4 Buffers
+Added 0 Registers via replication
+Added 1 LUTs via replication
+
+
+Finished technology timing optimizations and critical path resynthesis (Time elapsed 0h:00m:12s; Memory used current: 144MB peak: 168MB)
+
+@N: FX164 |The option to pack flops in the IOB has not been specified 
+@N: FX623 |Packing into LUT62
+
+Finished restoring hierarchy (Time elapsed 0h:00m:12s; Memory used current: 145MB peak: 168MB)
+
+Writing Analyst data base /home/sniu/lab/dwt/devl/fir/fir.srm
+
+Finished Writing Netlist Databases (Time elapsed 0h:00m:20s; Memory used current: 146MB peak: 168MB)
+
+Writing EDIF Netlist and constraint files
+E-2011.03
+
+Finished Writing EDIF Netlist and constraint files (Time elapsed 0h:00m:21s; Memory used current: 147MB peak: 168MB)
+
+
+Starting Writing Gated Clock Conversion Report (Time elapsed 0h:00m:21s; Memory used current: 145MB peak: 168MB)
+
+@N: MF276 |Gated clock conversion enabled, but no gated clocks found in design 
+
+Finished Writing Gated Clock Conversion Report (Time elapsed 0h:00m:21s; Memory used current: 145MB peak: 168MB)
+
+
+Starting Writing Generated Clock Conversion Report (Time elapsed 0h:00m:21s; Memory used current: 145MB peak: 168MB)
+
+@N: MF333 |Generated clock conversion enabled, but no generated clocks found in design 
+
+Finished Writing Generated Clock Conversion Report (Time elapsed 0h:00m:21s; Memory used current: 145MB peak: 168MB)
+
+@W: MT420 |Found inferred clock fir|clk with period 3.44ns. A user-defined clock should be declared on object "p:clk"
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Thu Apr 25 18:13:25 2013
+#
+
+
+Top view:               fir
+Requested Frequency:    290.5 MHz
+Wire load mode:         top
+Paths requested:        0
+Constraint File(s):    /home/sniu/lab/dwt/devl/fir/fir.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock..
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -0.417
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
+------------------------------------------------------------------------------------------------------------------------
+fir|clk            290.5 MHz     259.2 MHz     3.442         3.859         -0.417     inferred     Autoconstr_clkgroup_0
+========================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------
+fir|clk   fir|clk  |  3.442       -0.417  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+		No IO constraint found 
+
+
+##### END OF TIMING REPORT #####]
+
+---------------------------------------
+Resource Usage Report for fir 
+
+Mapping to part: xc5vfx130tff1738-2
+Cell usage:
+BUF             4 uses
+DSP48E          8 uses
+FDCE            472 uses
+GND             9 uses
+MUXCY_L         238 uses
+VCC             9 uses
+XORCY           239 uses
+LUT1            15 uses
+LUT2            258 uses
+LUT3            448 uses
+LUT4            3 uses
+LUT5            5 uses
+LUT6            18 uses
+
+I/O ports: 100
+I/O primitives: 68
+IBUF           35 uses
+IBUFG          1 use
+OBUF           16 uses
+OBUFT          16 uses
+
+BUFG           1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   472 (0%)
+
+DSP48s: 8 of 320 (2%)
+
+Global Clock Buffers: 1 of 32 (3%)
+
+Total load per clock:
+   fir|clk: 480
+
+Mapping Summary:
+Total  LUTs: 745 (0%)
+
+
+ Number of unique control sets:              6
+
+Mapper successful!
+Process took 0h:00m:21s realtime, 0h:00m:21s cputime
+# Thu Apr 25 18:13:25 2013
+
+###########################################################]

@@ -22,60 +22,9 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="fir.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
-    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="fir.cmd_log"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="fir.lso"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="fir.prj"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="fir.syr"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="fir.xst"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="fir_envsettings.html"/>
-    <file xil_pn:fileType="FILE_HTML" xil_pn:name="fir_summary.html"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="fir_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+    <file xil_pn:fileType="FILE_SYNPLIFY_MISC" xil_pn:name="fir.sdc" xil_pn:origination="imported"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7400250710203440056" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4798149517371561405" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3639908546467308988" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5918749233538361311" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366904996" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4397792709674246969" xil_pn:start_ts="1366904996">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-    </transform>
-    <transform xil_pn:end_ts="1366917102" xil_pn:in_ck="-471123732917395127" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="3609391773001901999" xil_pn:start_ts="1366917090">
-      <status xil_pn:value="FailedRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="fir.lso"/>
-      <outfile xil_pn:name="fir.prj"/>
-      <outfile xil_pn:name="fir.syr"/>
-      <outfile xil_pn:name="fir.xst"/>
-      <outfile xil_pn:name="fir_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
-    </transform>
-  </transforms>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
 
 </generated_project>

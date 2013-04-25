@@ -1,0 +1,49 @@
+%%% protect protected_file
+#OPTIONS:"|-bldtbl|-dspmac|-pqdpadd|-primux|-fixsmult|-sdff_counter|-infer_seqShift|-nram|-divnmod|-loadunimacro|-encrypt|-pro|-lite|-ll|2000|-compiler_compatible|-ui|-fid2|-ram|-sharing|on|-autosm|-ignore_undefined_lib|-lib|IEEE_PROPOSED|-lib|IEEE_PROPOSED|-lib|IEEE_PROPOSED|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/linux_a_64/c_vhdl":1298500035
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/lib/vhd/location.map":1298499987
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/lib/vhd/std.vhd":1298499987
+#CUR:"/tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd":1364340877
+#CUR:"/tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd":1364340877
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/lib/vhd/std_textio.vhd":1298499987
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/lib/vhd/std1164.vhd":1298499987
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/lib/vhd/numeric.vhd":1298499987
+#CUR:"/tools/Synopsys/s_fpga/E-2011.03/lib/vhd/math_real.vhd":1298499987
+#CUR:"/tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/float_pkg_c.vhd":1364340877
+#CUR:"/home/sniu/lab/dwt/hdl/submodule/fir/fir_pkg.vhd":1366917753
+#CUR:"/home/sniu/lab/dwt/hdl/submodule/fir/fir_unit_fixed.vhd":1366930222
+#CUR:"/home/sniu/lab/dwt/hdl/submodule/fir/fixed_fir.vhd":1366919861
+#CUR:"/home/sniu/lab/dwt/hdl/submodule/fir/fir.vhd":1366919819
+@E8lFkRDCV
+HsDsHLNRs$I	Fs
+sbNN0lCC8sRN_0NVlFsRs#0H
+MoHkMb0DRO	4R-
+bHMks0R#-0R4M
+HbRk0O-CR4M
+HbRk0OVFCVM_CR
+-4HkMb0FROCRVV-H4
+M0bkR08NNM_HR
+-4Fbk0k80RN_0NFRk0-C4
+MF8l8CkD
+8lFkRDCVCHG8H_VsH
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR0s#RH4
+M0bkRROC4M
+HbRk0OVFCVM_CRH4
+M0bkRCOFV4VRnM
+HbRk08NN0_RHM4Fn
+kk0b0NR80FN_k40RnM
+C88lFk
+DClkF8DVCRHks_M_H0VCHG8H
+DLssN$FRIsH	
+M0bkR	ODRH4
+M0bkR0s#RH4
+M0bkRROC4M
+HbRk00_NbHdMR.M
+HbRk0OVFCVnR4
+bHMk80RN_0NH4MRnk
+F00bkR08NNk_F0.Rd
+8CMlkF8D
+C
+
