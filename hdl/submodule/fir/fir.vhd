@@ -29,16 +29,13 @@ use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-library IEEE_PROPOSED;
-use IEEE_PROPOSED.fixed_float_types.all;
-use IEEE_PROPOSED.fixed_pkg.all;
-use IEEE_PROPOSED.float_pkg.all;
-
 library work;
 use work.fir_pkg.all;
 
 entity fir is
-    Port ( clk						: in  STD_LOGIC;
+	Generic (
+			  data_form				: string := "fixed");		-- fixed/floating
+	Port (  clk						: in  STD_LOGIC;
            rst						: in  STD_LOGIC;
            ce						: in  STD_LOGIC;
 			  coeff_en				: in	STD_LOGIC;
@@ -63,17 +60,17 @@ begin
 					data_out		=> data_out(WIDTH_DATA_FIXED downto 0));
 end generate FIXED_GEN;
 
-FLOAT_GEN: if (data_form = "float") generate
-begin
-	FLOAT_FIR: entity work.float_fir
-	port map(	clk			=> clk,
-					rst			=> rst,
-					ce				=> ce,
-					coeff_en		=> coeff_en,
-					coeff			=> coeff,
-					data_in		=> data_in,
-					data_out		=> data_out);
-end generate FLOAT_GEN;
+--FLOAT_GEN: if (data_form = "float") generate
+--begin
+--	FLOAT_FIR: entity work.float_fir
+--	port map(	clk			=> clk,
+--					rst			=> rst,
+--					ce				=> ce,
+--					coeff_en		=> coeff_en,
+--					coeff			=> coeff,
+--					data_in		=> data_in,
+--					data_out		=> data_out);
+--end generate FLOAT_GEN;
 
 end Behavioral;
 

@@ -56,8 +56,12 @@ signal data_in_buff, data_out_buff: sfixed(DATA_INT downto -DATA_FRA);
 type CoefficientType is array (0 to TAP-1) of sfixed(COEFF_INT downto -COEFF_FRA);
 signal coefficient : CoefficientType := (others => (others => '0'));
 
-type TapBuffType is array (0 to TAP-1) of sfixed(DATA_INT downto -DATA_FRA);
+type TapBuffType is array (0 to TAP-1) of sfixed(DATA_INT + COEFF_INT + 1 
+														downto -(DATA_FRA + COEFF_FRA));
 signal tap_buff : TapBuffType := (others => (others => '0'));
+
+signal tap_reg : sfixed(DATA_INT + COEFF_INT + 1 
+						downto -(DATA_FRA + COEFF_FRA));
 
 begin
 
@@ -75,15 +79,45 @@ begin
 	end if;
 end process;
 
+-- loading coefficients process
 process(clk, rst)
 begin
 	if rst = '1' then
-		tap_buff <= (others => (others => '0'));
+		coefficient <= (others => (others => '0'));
 	elsif rising_edge(clk) then
-		
-		for i in TAP downto 1 loop
-			tap_buff(i) <= tap_buff(i-1)
-		end loop;
+		if (ce = '1') and (coeff_en = '1') then
+			coefficient(TAP-1) <= to_sfixed(coeff, COEFF_INT, -COEFF_FRA);
+			for j in TAP-1 downto 1 loop
+				coefficient(j-1) <= coefficient(j);
+			end loop;
+		end if;
+	end if;
+end process;
+
+-- transposed FIR filter
+fir_gen: for i in 1 to TAP-1 generate
+begin
+	fir_inst: entity work.fir_unit_fixed 
+	port map
+	(	clk			=> clk,
+		rst			=> rst,
+		ce				=> ce,
+		tap_in		=> tap_buff(i),
+		coeff			=> coefficient(TAP-1-i),
+		data_in		=> data_in_buff,
+		data_out		=> tap_buff(i+1));
+end generate fir_gen;
+
+process(clk, rst)
+begin
+	if rst = '1' then
+		tap_reg <= (others => '0');
+		tap_buff(0) <= (others => '0');
+	elsif rising_edge(clk) then
+		if ce = '1' then
+			tap_reg <= data_in_buff * coefficient(TAP-1);
+			tap_buff(0) <= tap_reg;
+		end if;
 	end if;
 end process;
 
