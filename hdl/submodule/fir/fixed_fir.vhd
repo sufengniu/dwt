@@ -24,15 +24,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
+use IEEE.fixed_float_types.all;
+use IEEE.fixed_pkg.all;
+use IEEE.float_pkg.all;
+
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-library IEEE_PROPOSED;
-use IEEE_PROPOSED.fixed_float_types.all;
-use IEEE_PROPOSED.fixed_pkg.all;
-use IEEE_PROPOSED.float_pkg.all;
+--library IEEE_PROPOSED;
+--use IEEE_PROPOSED.fixed_float_types.all;
+--use IEEE_PROPOSED.fixed_pkg.all;
+--use IEEE_PROPOSED.float_pkg.all;
 
 library work;
 use work.fir_pkg.all;
@@ -85,7 +89,7 @@ begin
 	if rst = '1' then
 		coefficient <= (others => (others => '0'));
 	elsif rising_edge(clk) then
-		if (ce = '1') and (coeff_en = '1') then
+		if coeff_en = '1' then
 			coefficient(TAP-1) <= to_sfixed(coeff, COEFF_INT, -COEFF_FRA);
 			for j in TAP-1 downto 1 loop
 				coefficient(j-1) <= coefficient(j);

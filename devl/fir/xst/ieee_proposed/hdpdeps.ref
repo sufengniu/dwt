@@ -1,0 +1,20 @@
+V3 9
+FL $XILINX./../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd 2013/03/26.18:34:37 P.58f
+PH IEEE_PROPOSED/fixed_float_types 1366985181 \
+      FL $XILINX./../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_float_types_c.vhd
+PH IEEE_PROPOSED/fixed_pkg 0 \
+      FL $XILINX./../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd \
+      PB std/TEXTIO 1364358218 PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 LB ieee_proposed \
+      PH IEEE_PROPOSED/fixed_float_types 1366985181
+PB IEEE_PROPOSED/fixed_pkg 0 \
+      FL $XILINX./../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/fixed_pkg_c.vhd \
+      PH IEEE_PROPOSED/fixed_pkg 0 PB ieee/MATH_REAL 1364358224
+PH IEEE_PROPOSED/float_pkg 0 \
+      FL $XILINX./../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/float_pkg_c.vhd \
+      PB std/TEXTIO 1364358218 PB ieee/std_logic_1164 1364358218 \
+      PB ieee/NUMERIC_STD 1364358223 LB ieee_proposed \
+      PH IEEE_PROPOSED/fixed_float_types 1366985181 PB IEEE_PROPOSED/fixed_pkg 0
+PB IEEE_PROPOSED/float_pkg 0 \
+      FL $XILINX./../../../../../tools/Xilinx/14.5/ISE_DS/ISE/vhdl/src/ieee_proposed/float_pkg_c.vhd \
+      PH IEEE_PROPOSED/float_pkg 0

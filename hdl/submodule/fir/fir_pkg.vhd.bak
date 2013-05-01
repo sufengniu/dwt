@@ -55,8 +55,8 @@ package fir_pkg is
 	constant WIDTH_COEFF_FLOAT							: integer := COEFF_FPF + COEFF_EXP + 1;	
 	
 	-- filter order
-	constant TAP               : integer := 8;
-  constant VECTOR_LENGTH      : integer := 256;
+	constant TAP											: integer := 8;
+
 	type din_t is array (VECTOR_LENGTH-1 downto 0) of std_logic_vector(DATA_WIDTH-1 downto 0);
 	type dout_t is array (VECTOR_LENGTH-1 downto 0) of std_logic_vector(DATA_WIDTH-1 downto 0);
 	type cin_t is array (TAP-1 downto 0) of std_logic_vector(COEFF_WIDTH-1 downto 0);

@@ -24,15 +24,19 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 use IEEE.NUMERIC_STD.ALL;
 
+use IEEE.fixed_float_types.all;
+use IEEE.fixed_pkg.all;
+use IEEE.float_pkg.all;
+
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-library IEEE_PROPOSED;
-use IEEE_PROPOSED.fixed_float_types.all;
-use IEEE_PROPOSED.fixed_pkg.all;
-use IEEE_PROPOSED.float_pkg.all;
+--library IEEE_PROPOSED;
+--use IEEE_PROPOSED.fixed_float_types.all;
+--use IEEE_PROPOSED.fixed_pkg.all;
+--use IEEE_PROPOSED.float_pkg.all;
 
 library work;
 use work.fir_pkg.all;
